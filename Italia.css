@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {box-sizing: border-box;}
+
+body{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* Header */
+
+.header 
+{
+overflow: hidden;
+background-color: #272626;
+padding: 20px 10px;
+}
+
+.header a
+{
+float: left;
+color: rgb(73, 206, 21);
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+}
+
+.header a.logo 
+{
+font-size: 40px;
+font-weight: bold;
+}
+
+.logo
+{
+width: 100px;
+height: 100px;
+margin-right: 20px;
+margin-left: 20px;
+margin-bottom: -25px;
+}
+
+.header a:hover 
+{
+background-color: rgb(73, 206, 21);
+color: black;
+}
+
+.header a.active 
+{
+background-color: rgb(73, 206, 21);
+color: rgb(0, 0, 0);
+}
+
+.header-right 
+{
+float: right;
+}
+
+
+/* Slideshow */
+
+.container
+{
+width: 100%;
+height: 120vh;
+background-color: rgba(0, 0, 0, 0.842);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+  
+.swiper
+{
+width: 75%;
+height: fit-content;
+}
+
+.swiper-slide img
+{
+width: 100%;
+}
+
+
+
+.swiper .swiper-button-prev
+{
+ color: rgba(255, 255, 255, 0.842);
+}
+
+.swiper .swiper-button-next
+{
+  color: rgba(255, 255, 255, 0.842);
+}
+
+
+/* Body */
+
+.main_1
+{
+border-style: hidden;
+margin-left: 185px;
+margin-right: 140px;
+margin-top: 50px;
+margin-bottom: 185px;
+}
+
+.main_2
+{
+background-color:  #030303;
+font-family: Arial, Helvetica, sans-serif;
+padding-right: 200px;
+padding-left: 150px;
+padding-top:20px;
+padding-bottom: 50px;
+}
+
+.main_3
+{
+margin-top: 100px;
+color: white;
+}
+
+
+#headline
+{
+text-align: center;
+font-size: 50px;
+font-family: cursive;
+margin-top: 65px;
+}    
+
+.paragraph
+{
+color: rgb(255, 255, 255);
+font-size: 18px;
+margin-bottom: 15px;
+}
+
+.photo
+{
+width: 900px;
+height: 600px;
+padding-bottom: 20px;
+}
+
+
+/* Footer */
+
+.footer
+{
+background-color: #272626;
+color: white;
+padding: 30px;
+display: flex;
+justify-content: space-between;
+}
+
+.footer_title
+{
+font-size: 20px;
+font-weight: 600;
+}
+
+.footer_title span
+{
+color: rgb(0, 0, 0);
+}
+
+.footer .social_icons a
+{
+font-size: 20px;
+padding-top: 0;
+padding-bottom: 0;
+padding-right: 12px;
+padding-left: 0;
+color: white;
+}

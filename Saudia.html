@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudia Arabia</title>
+    <link rel="stylesheet" href="Saudia.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="index.html"><img src="images/Logo.png" alt=""></a>
+      <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#explore">Explore</a></li>
+              <li class="ctn"><a  href="login.html">Login</a></li>
+              
+      </ul>
+      
+    </nav>
+    <header>
+        <label id="dark-change"></label>
+        <div class="header-content">
+           <h2>Explore This Wounderful Country</h2>
+           <div class="line"></div>
+           <h1>Saudia Arabia</h1>
+           <a href="https://en.wikipedia.org/wiki/History_of_Saudi_Arabia" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>Most Popular Places</h1>
+            <div class="line"></div>
+
+        </div >
+        <div class="row">
+       <div class="col">
+          <img src="images/Saudia/Mecca--Center-of-All-Activity.jpg" alt="">
+          <h4>Mecca</h4>
+          <p>Mecca is one of the holiest cities in western Saudi Arabia as it’s Prophet Muhammed’s birthplace. Every year, devotees from all over the world visit this spiritually rich and famous places in Saudi Arabia, and seek blessings from their almighty. This city is home to grand mosques and lives on Islamic beliefs. </p>
+          <a href="#" class="ctn">Learn More</a>
+       </div>
+       <div class="col">
+        <img src="images/Saudia/Al-Masmak-Fort.jpg" alt="">
+        <h4>Al Masmak Fort</h4>
+        <p>Al Masmak Fort or Fortress is a remarkable site to visit in Riyadh that dates back to 1865 and is made from clay and mud bricks. The fort has great importance in Saudi Arabia as it tells about the history and kingdom of that ruled the country. The fort features a rich collection of artefacts that give insight about the history of the rulers and their lifestyle.  </p>
+        <a href="#" class="ctn">Learn More</a>
+     </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+        <h1 id="explore">Explore History</h1>
+        <div class="line"></div>
+        <p>The history of Saudi Arabia as a nation state began with the emergence of the Al Saud dynasty in central Arabia in 1744 and the subsequent establishment of the Emirate of Diriyah. Pre-Islamic Arabia, the territory that constitutes modern Saudi Arabia, was the site of several ancient cultures and civilizations; the prehistory of Saudi Arabia shows some of the earliest traces of human activity in the world.The area of modern-day Saudi Arabia formerly consisted of mainly four distinct historical regions: Hejaz, Najd and parts of Eastern Arabia (Al-Ahsa), and Southern Arabia ('Asir).[9] <br><br><br><br> The modern Kingdom of Saudi Arabia was founded in 1932 by Abdulaziz bin Abdul Rahman, known in the West as Ibn Saud. Abdulaziz united the four regions into a single state through a series of conquests beginning in 1902 with the capture of Riyadh, the ancestral home of his family. Saudi Arabia has since been an absolute monarchy governed along Islamist lines. Saudi Arabia is sometimes called "the Land of the Two Holy Mosques", in reference to Al-Masjid al-Haram (in Mecca) and Al-Masjid an-Nabawi (in Medina), the two holiest places in Islam.</p>
+        <a href="https://en.wikipedia.org/wiki/History_of_Saudi_Arabia" class="ctn">Learn More</a>
+    </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+      <div class="content-col">
+            <h1  id="gallery">GALLERY</h1>
+            <div class="line"></div>
+            <p>This is gallery of the most famous places in there</p>
+            <a href="#" class="ctn">Learn More</a>
+    </div>
+    <div class="image-col">
+<div class="image-gallery">
+    <img src="images/Saudia/Jeddah-Floating-Mosque.jpg" alt="">
+    <img src="images/Saudia/Riyadh--The-Cultural-Hub-in-Saudi-Arabia.jpg" alt="">
+    <img src="images/Saudia/riyadh-gray-high-rise-building-wallpaper-preview.jpg" alt="">
+    <img src="images/Saudia/Half-Moon-Bay.jpg" alt="">
+</div>
+</div>
+</div>
+    </section>
+    <section class="footer">
+        <p>123 Fifth Avenue, NY 10160, New York, USA\ Phone: 800-123-456\ Email: contact@exampel.com </p>
+        <p>Copyright @ 2020 Outdoor Adventure</p>
+    </p>
+    </section>
+    <script>
+        var content=document.getElementsByTagName('body')[0];
+        var darkmode =document.getElementById('dark-change');
+    darkmode.addEventListener('click', function(){
+        darkmode.classList.toggle('active');
+    content.classList.toggle('night');
+    })
+    </script>
+</body>
+</html>
