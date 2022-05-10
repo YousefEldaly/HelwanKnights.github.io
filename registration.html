@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp - Helwan Knights</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      *,
+      *:before,
+      *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box;
+      }
+
+      form {
+        max-width: 300px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background: transparent;
+        border-radius: 8px;
+      }
+
+      h1 {
+        padding-top: 20px;
+        margin: 0 0 30px 0;
+        text-align: center;
+        font-size: 32px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="date"],
+      input[type="datetime"],
+      input[type="email"],
+      input[type="number"],
+      input[type="search"],
+      input[type="tel"],
+      input[type="time"],
+      input[type="url"],
+      textarea,
+      #job {
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin: 0;
+        outline: 0;
+        padding: 15px;
+        width: 100%;
+        background-color: rgba(57, 57, 57, 0.07);
+        color: var(--main-color);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        margin-bottom: 30px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin: 0 4px 8px 0;
+      }
+
+
+      .btttn {
+        padding: 19px 39px 18px 39px;
+        color: #fff;
+        background-color: var(--main-color);
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid #455d58;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+        margin-bottom: 10px;
+      }
+
+      fieldset {
+        margin-bottom: 30px;
+        border: none;
+      }
+
+      legend {
+        font-size: 2.1em;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 18px;
+      }
+
+      .number {
+        background-color: var(--main-color);
+        color: #fff;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        font-size: 0.8em;
+        margin-right: 4px;
+        line-height: 30px;
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+        border-radius: 100%;
+      }
+
+      @media screen and (min-width: 480px) {
+        form {
+          max-width: 680px;
+        }
+      }
+    </style>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container" style="padding-top: 1rem">
+      <nav class="navbar">
+        <a class="logo" href="index.html"><img src="images/Logo.png"></a>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fas fa-bars" id="open"></i>
+          <i class="fas fa-times" id="close"></i>
+        </label>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="Brazil.html" class="nav-link">Brazil</a>
+          </li>
+          <li class="nav-item">
+            <a href="China.html" class="nav-link">China</a>
+          </li>
+          <li class="nav-item">
+            <a href="Greece.html" class="nav-link">Greece</a>
+          </li>
+          <li class="nav-item">
+            <a href="USA.html" class="nav-link">USA</a>
+          </li>
+          <li class="nav-item">
+            <a href="egypt.html" class="nav-link">Egypt</a>
+          </li>
+          <li class="nav-item">
+            <a href="jaban.html" class="nav-link">Japan</a>
+          </li>
+          <li class="nav-item">
+            <a href="explore.html" class="nav-link">00000 </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">LogIn</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Account  Registration -->
+    <div
+      style="
+        background-color: var(--white-pinkish-color);
+        color: var(--main-color);
+      "
+    >
+      <form name="register" action="index.html" method="post">
+        <h1>Sign Up</h1>
+
+        <fieldset>
+          <legend><span class="number">1</span>Your basic info</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="user_password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required
+          />
+
+          <label>Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="user_age"
+            min="10"
+            max="80"
+            required
+          /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="number">2</span>Your profile</legend>
+          <label for="bio">Biography:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+
+        <button
+          class="book-btn btttn"
+          type="submit"
+          onclick="ValidateEmailSignUp(document.register.user_email)"
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="container" style="color: white">
+        <div class="back-to-top">
+          <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer__content row">
+          <div class="col-3">
+            <h4>About</h4>
+            <p>
+              Tourism is a website that helps you to choose your vacation spot
+              among the world's top-rated attractions and places.
+            </p>
+          </div>
+          <div class="col-3">
+            <h4>Get Social</h4>
+            <p>Follow us on social media and keep in touch with Pyramids.</p>
+            <ul class="social-icons">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-tripadvisor"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
