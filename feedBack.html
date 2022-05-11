@@ -104,7 +104,6 @@
     font-weight: 300;
     display: inline;
   } 
-/* not working */
 
 .halves {display: flex; flex-flow: row wrap;
 height: auto; width:auto;}
@@ -149,14 +148,13 @@ height: auto; width:auto;}
     color: #ffc700;
 }
 
-/* .rate:not(:checked) > label:hover, */
+.rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
     color: var(--main-color);
 }
-
-/* .rate > input:checked + label:hover, */
+.rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
-/* .rate > input:checked ~ label:hover, */
+.rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
