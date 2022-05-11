@@ -2,7 +2,7 @@
 
 window.onload = function() {
   // try to get the theme from local storage if it doesn't exist set to default
-        
+      let currentTheme = localStorage.getItem("mytheme") || "default";
       setTheme("default", currentTheme);
   // get the theme selector 
       const themeSelector = document.getElementById("theme-selector");
